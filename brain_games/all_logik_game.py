@@ -1,34 +1,35 @@
-def getRandom():
-    import random
+import random
+import prompt
+
+
+def generate_question():
     return random.randint(0, 100)
 
 
-def checkAnswer(user_Name, user_Answer, right_Answer, counter):
-    i = counter
-    if user_Answer == right_Answer:
+def check_answer(user_name, user_answer, right_answer, counter):
+    if user_answer == right_answer:
         print('Correct!')
-        i += 1
+        return counter + 1
     else:
-        print(f"'{user_Answer}' is wrong answer ;(. Correct answer was '{right_Answer}'")
-        print(f"Let's try again, {user_Name}!")
-        i = 4
-    return i
+        print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{right_answer}'")
+        print(f"Let's try again, {user_name}!")
+        return 4
 
 
-def Brain_Game(Game_Iter, game_Question):
-    import prompt
-    print(f"Welcome to the Brain Games!\n{game_Question}")
-    userName = prompt.string('May I have your name? ')  #
-    print(f"Hello, {userName}!\n")
+def brain_game(game_question):
+    print(f"Welcome to the Brain Games!\n{game_question}")
+    user_name = prompt.string('May I have your name? ')
+    print(f"Hello, {user_name}!\n")
 
-    i = 0
-    while i < 3:
-        question, right_Answer = Game_Iter()
-        userAnswer = input(f"Question: {question}\nYour answer ")
-        i = checkAnswer(userName, userAnswer, right_Answer, i)
-    if i < 4:
-        print(f"Congratulations, {userName}!")
+    correct_answers_count = 0
+    while correct_answers_count < 3:
+        question = generate_question()
+        right_answer = str(question)
+        user_answer = input(f"Question: {question}\nYour answer ")
+        correct_answers_count = check_answer(user_name, user_answer, right_answer, correct_answers_count)
+
+    print(f"Congratulations, {user_name}!")
 
 
 if __name__ == '__main__':
-    Brain_Game()
+    brain_game()
