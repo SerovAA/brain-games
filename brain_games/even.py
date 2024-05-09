@@ -1,4 +1,5 @@
 import random
+import prompt
 
 
 def generate_question_answer():
@@ -8,9 +9,9 @@ def generate_question_answer():
     return question, answer
 
 
-def run_brain_even():
-    print("Welcome to the Brain Games!")  # Приветствие игрока
-    name = input("May I have your name? ")  # Запрашиваем имя игрока
+def brain_even():
+    print("Welcome to the Brain Games!")
+    name = prompt.string("May I have your name? ")
     print(f'Hello, {name}! \nAnswer "yes" if the number is even, otherwise answer "no".')
 
     correct_answers_count = 0
@@ -26,9 +27,8 @@ def run_brain_even():
             print(f"Let's try again, {name}!")
             break
 
-    if correct_answers_count == 3:
-        print(f"Congratulations, {name}!")
+    print(f"Congratulations, {name}!")
 
 
 if __name__ == '__main__':
-    run_brain_even()
+    brain_even()
