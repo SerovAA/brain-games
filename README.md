@@ -5,6 +5,3 @@
 
 
 <a href="https://asciinema.org/a/CZYzUumhJPpsPtaVYhNG4ccSN" target="_blank"><img src="https://asciinema.org/a/CZYzUumhJPpsPtaVYhNG4ccSN.svg" /></a>
-
-[![asciicast](https://asciinema.org/a/tCeVNBQYkubhLoMkdncEyrURC.svg)](https://asciinema.org/a/tCeVNBQYkubhLoMkdncEyrURC)
-
