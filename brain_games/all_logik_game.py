@@ -1,4 +1,4 @@
-def getRandom():
+def random_at_100():
     import random
     return random.randint(1, 100)
 
@@ -17,17 +17,18 @@ def checkAnswer(user_Name, user_Answer, right_Answer, counter):
 
 def Brain_Game(Game_Iter, game_Question):
     import prompt
-    print(f"Welcome to the Brain Games!\n{game_Question}")
-    userName = prompt.string('May I have your name? ')  #
-    print(f"Hello, {userName}!\n")
+    print(f"Welcome to the Brain Games!")
+    user_name = prompt.string('May I have your name? ')  #
+    print(f"Hello, {user_name}!")
+    print(f'{game_Question}')
 
     i = 0
     while i < 3:
         question, right_Answer = Game_Iter()
-        userAnswer = input(f"Question: {question}\nYour answer ")
-        i = checkAnswer(userName, userAnswer, right_Answer, i)
+        user_Answer = input(f"Question: {question}\nYour answer ")
+        i = checkAnswer(user_name, user_Answer, right_Answer, i)
     if i < 4:
-        print(f"Congratulations, {userName}!")
+        print(f"Congratulations, {user_name}!")
 
 
 if __name__ == '__main__':

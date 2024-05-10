@@ -1,10 +1,10 @@
 import random
-from brain_games.all_logik_game import getRandom, Brain_Game
+from brain_games.all_logik_game import random_at_100, Brain_Game
 
 
 def generate_expression():
-    operand1 = getRandom()
-    operand2 = getRandom()
+    operand1 = random_at_100()
+    operand2 = random_at_100()
     operator = random.choice(['+', '-', '*'])
 
     expression = f"{operand1} {operator} {operand2}"

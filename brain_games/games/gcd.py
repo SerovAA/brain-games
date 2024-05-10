@@ -1,9 +1,9 @@
-from brain_games.all_logik_game import getRandom, Brain_Game
+from brain_games.all_logik_game import random_at_100, Brain_Game
 
 
 def generate_expression():
-    num1 = getRandom()
-    num2 = getRandom()
+    num1 = random_at_100()
+    num2 = random_at_100()
     expression = f"{num1} {num2}"
     gcd = find_gcd(num1, num2)
     return expression, str(gcd)

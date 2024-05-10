@@ -1,11 +1,11 @@
 import random
-from brain_games.all_logik_game import Brain_Game, getRandom
+from brain_games.all_logik_game import Brain_Game, random_at_100
 
 
 def generate_progression():
     progression_len = random.randint(5, 10)
     hidden_element_index = random.randint(0, progression_len - 1)
-    start_number = getRandom()
+    start_number = random_at_100()
     step = random.randint(1, 10)
 
     progression = [str(start_number + step * i) for i in range(progression_len)]

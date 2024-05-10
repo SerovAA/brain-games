@@ -4,10 +4,11 @@
 
 Игра "Проверка на чётность"
 <a href="https://asciinema.org/a/CZYzUumhJPpsPtaVYhNG4ccSN" target="_blank"><img src="https://asciinema.org/a/CZYzUumhJPpsPtaVYhNG4ccSN.svg" /></a>
-Игра "Калькулятор".
+Игра "Калькулятор"
 [![asciicast](https://asciinema.org/a/tCeVNBQYkubhLoMkdncEyrURC.svg)](https://asciinema.org/a/tCeVNBQYkubhLoMkdncEyrURC)
-Игра "Наибольший общий делитель (НОД)".
+Игра "Наибольший общий делитель (НОД)"
 [![asciicast](https://asciinema.org/a/v0LcfITNxPnjP95LUogBKXK0Y.svg)](https://asciinema.org/a/v0LcfITNxPnjP95LUogBKXK0Y)
-Игра "Арифметическая прогрессия".
+Игра "Арифметическая прогрессия"
 [![asciicast](https://asciinema.org/a/n1RtAKe34z46tNQlRq5ZSz0bF.svg)](https://asciinema.org/a/n1RtAKe34z46tNQlRq5ZSz0bF)
-
+Игра "Простое ли число?"
+[![asciicast](https://asciinema.org/a/RccCTvqR69FrbIqBzvVX3YpBu.svg)](https://asciinema.org/a/RccCTvqR69FrbIqBzvVX3YpBu)
