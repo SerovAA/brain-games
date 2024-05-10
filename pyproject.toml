@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hexlet_code"
+name = "hexlet-code"
 version = "0.1.0"
 description = "Brain Games. 5 games: Even, Calculator, GCD, Progression, Prime"
 repository = "https://github.com/SerovAA/python-project-49"
