@@ -9,7 +9,7 @@ def generate_question_answer():
 
 
 def brain_even():
-    Brain_Game(generate_question_answer, 'Answer "yes" if number even otherwise answer "no".')
+    Brain_Game(generate_question_answer, 'Answer "yes" if the number is even, otherwise answer "no".')
 
 
 if __name__ == '__main__':
