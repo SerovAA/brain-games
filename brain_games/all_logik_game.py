@@ -19,8 +19,7 @@ def Brain_Game(Game_Iter, game_Question):
     import prompt
     print(f"Welcome to the Brain Games!")
     user_name = prompt.string('May I have your name? ')  #
-    print(f"Hello, {user_name}!")
-    print(f'{game_Question}')
+    print(f"Hello, {user_name}!\n{game_Question}")
 
     i = 0
     while i < 3:
