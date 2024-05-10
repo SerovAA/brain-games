@@ -1,6 +1,6 @@
 def getRandom():
     import random
-    return random.randint(0, 100)
+    return random.randint(1, 100)
 
 
 def checkAnswer(user_Name, user_Answer, right_Answer, counter):
