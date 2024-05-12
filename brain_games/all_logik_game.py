@@ -18,12 +18,10 @@ def check_answer(user_Name, user_Answer, right_Answer, counter):
 
 def Brain_Game(game_iter, game_question):
     import prompt
-    print(f"Welcome to the Brain Games!")
+    print("Welcome to the Brain Games!")
     user_name = prompt.string('May I have your name? ')  #
     print(f"Hello, {user_name}!")
     print(f"{game_question}")
-
-
     i = 0
     while i < 3:
         question, right_Answer = game_iter()
