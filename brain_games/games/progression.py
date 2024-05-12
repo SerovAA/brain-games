@@ -19,7 +19,8 @@ def generate_progression():
 
 
 def brain_progression():
-    Brain_Game(generate_progression, 'What number is missing in the progression?')
+    Brain_Game(generate_progression,
+               'What number is missing in the progression?')
 
 
 if __name__ == '__main__':

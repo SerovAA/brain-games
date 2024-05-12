@@ -3,13 +3,14 @@ def random_at_100():
     return random.randint(1, 100)
 
 
-def checkAnswer(user_Name, user_Answer, right_Answer, counter):
+def check_answer(user_Name, user_Answer, right_Answer, counter):
     i = counter
     if user_Answer == right_Answer:
         print('Correct!')
         i += 1
     else:
-        print(f"'{user_Answer}' is wrong answer ;(. Correct answer was '{right_Answer}'")
+        print(f"'{user_Answer}' "
+              f"is wrong answer ;(. Correct answer was '{right_Answer}'")
         print(f"Let's try again, {user_Name}!")
         i = 4
     return i
@@ -25,7 +26,7 @@ def Brain_Game(Game_Iter, game_Question):
     while i < 3:
         question, right_Answer = Game_Iter()
         user_Answer = input(f"Question: {question}\nYour answer ")
-        i = checkAnswer(user_name, user_Answer, right_Answer, i)
+        i = check_answer(user_name, user_Answer, right_Answer, i)
     if i < 4:
         print(f"Congratulations, {user_name}!")
 

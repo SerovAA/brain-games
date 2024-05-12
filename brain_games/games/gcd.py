@@ -16,7 +16,8 @@ def find_gcd(num1, num2):
 
 
 def gcd_game():
-    Brain_Game(generate_expression, 'Find the greatest common divisor of given numbers.')
+    Brain_Game(generate_expression,
+               'Find the greatest common divisor of given numbers.')
 
 
 if __name__ == '__main__':
