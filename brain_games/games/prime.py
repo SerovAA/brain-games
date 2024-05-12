@@ -10,7 +10,7 @@ def question_and_correct_answer():
     return question, "yes"
 
 def brain_prime():
-    Brain_Game(question_and_correct_answer, 'Answer "yes" if given number is prime. Otherwise answer "no"')
+    Brain_Game(question_and_correct_answer, 'Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 if __name__ == '__main__':
