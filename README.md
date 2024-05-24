@@ -17,6 +17,8 @@ brain-progression - Арифметическая прогрессия
 
 brain-prime - Простое ли число?
 ___
+## Установка и запуск
+[![asciicast](https://asciinema.org/a/VLqZBrTdPGiikM2sHGdIBlq4Z.svg)](https://asciinema.org/a/VLqZBrTdPGiikM2sHGdIBlq4Z)
 
 ## Игра "Проверка на чётность"
 _Вам показывается случайное число. Нужно ответить 'yes', если число чётное, или 'no' — если нечётное._
