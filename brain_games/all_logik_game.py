@@ -1,35 +1,29 @@
-def random_at_100():
-    import random
-    return random.randint(1, 100)
+import prompt
 
-
-def check_answer(user_Name, user_Answer, right_Answer, counter):
-    i = counter
-    if user_Answer == right_Answer:
-        print('Correct!')
-        i += 1
-    else:
-        print(f"'{user_Answer}' "
-              f"is wrong answer ;(. Correct answer was '{right_Answer}'")
-        print(f"Let's try again, {user_Name}!")
-        i = 4
-    return i
-
-
-def Brain_Game(game_iter, game_question):
-    import prompt
+def brain_game(game_name):
     print("Welcome to the Brain Games!")
-    user_name = prompt.string('May I have your name? ')  #
+    user_name = prompt.string('May I have your name? ')
     print(f"Hello, {user_name}!")
-    print(f"{game_question}")
-    i = 0
-    while i < 3:
-        question, right_Answer = game_iter()
-        user_Answer = input(f"Question: {question}\nYour answer ")
-        i = check_answer(user_name, user_Answer, right_Answer, i)
-    if i < 4:
+    print(game_name.QUESTION)
+    round = 1
+    while round <= 3:
+        question, right_answer = game_name.generate_question_answer()
+        print(f'Question: {question}"')
+        user_answer = prompt.string("Your answer: ")
+        if user_answer == right_answer:
+            print('Correct!')
+            round += 1
+        else:
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{right_answer}'.\n"
+                  f"Let\'s try again, {user_name}!")
+            break
+    else:
         print(f"Congratulations, {user_name}!")
 
 
-if __name__ == '__main__':
-    Brain_Game()
+
+
+
+
+

@@ -1,20 +1,13 @@
 import random
-from brain_games.all_logik_game import random_at_100, Brain_Game
 
+QUESTION = 'What is the result of the expression?'
 
-def generate_expression():
-    operand1 = random_at_100()
-    operand2 = random_at_100()
+def generate_question_answer():
+    operand1 = random.randint(1, 100)
+    operand2 = random.randint(1, 100)
     operator = random.choice(['+', '-', '*'])
 
     expression = f"{operand1} {operator} {operand2}"
-    result = str(eval(expression))
-    return expression, result
+    right_answer = str(eval(expression))
+    return expression, right_answer
 
-
-def calculator_game():
-    Brain_Game(generate_expression, 'What is the result of the expression?')
-
-
-if __name__ == '__main__':
-    calculator_game()

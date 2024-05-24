@@ -1,8 +1,10 @@
 import random
-from brain_games.all_logik_game import Brain_Game, random_at_100
 
 
-def generate_progression():
+QUESTION = 'What number is missing in the progression?'
+
+
+def generate_question_answer():
     progression_len = random.randint(5, 10)
     hidden_element_index = random.randint(0, progression_len - 1)
     start_number = random_at_100()
@@ -13,15 +15,8 @@ def generate_progression():
     progression_with_hidden[hidden_element_index] = '..'
 
     question = ' '.join(progression_with_hidden)
-    correct_answer = str(start_number + step * hidden_element_index)
+    right_answer = str(start_number + step * hidden_element_index)
 
-    return question, correct_answer
-
-
-def brain_progression():
-    Brain_Game(generate_progression,
-               'What number is missing in the progression?')
+    return question, right_answer
 
 
-if __name__ == '__main__':
-    brain_progression()

@@ -1,24 +1,12 @@
-from brain_games.all_logik_game import random_at_100, Brain_Game
+import random
+from math import gcd
 
 
-def generate_expression():
-    num1 = random_at_100()
-    num2 = random_at_100()
+QUESTION = 'Find the greatest common divisor of given numbers.'
+
+def generate_question_answer():
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
     expression = f"{num1} {num2}"
-    gcd = find_gcd(num1, num2)
-    return expression, str(gcd)
-
-
-def find_gcd(num1, num2):
-    while num2:
-        num1, num2 = num2, num1 % num2
-    return num1
-
-
-def gcd_game():
-    Brain_Game(generate_expression,
-               'Find the greatest common divisor of given numbers.')
-
-
-if __name__ == '__main__':
-    gcd_game()
+    right_answer = gcd(num1, num2)
+    return expression, str(right_answer)
