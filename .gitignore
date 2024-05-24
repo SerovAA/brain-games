@@ -7,3 +7,5 @@ coverage.xml
 .pytest_cache/
 .idea
 __pycache__
+/brain_games/__pycache__/
+/venv/
