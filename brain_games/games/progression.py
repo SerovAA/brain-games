@@ -15,5 +15,3 @@ def generate_question_answer():
     question = ' '.join(progression_with_hidden)
     right_answer = str(start_number + step * hidden_element_index)
     return question, right_answer
-
-

@@ -12,4 +12,3 @@ def generate_question_answer():
     expression = f"{operand1} {operator} {operand2}"
     right_answer = str(eval(expression))
     return expression, right_answer
-

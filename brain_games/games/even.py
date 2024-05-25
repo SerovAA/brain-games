@@ -9,4 +9,3 @@ def generate_question_answer():
     question = str(number)
     right_answer = 'yes' if number % 2 == 0 else 'no'
     return question, right_answer
-

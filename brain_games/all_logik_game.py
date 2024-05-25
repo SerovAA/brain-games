@@ -9,7 +9,7 @@ def brain_game(game_name):
     round = 1
     while round <= 3:
         question, right_answer = game_name.generate_question_answer()
-        print(f'Question: {question}"')
+        print(f'Question: {question}')  # Удалил лишнюю кавычку
         user_answer = prompt.string("Your answer: ")
         if user_answer == right_answer:
             print('Correct!')
@@ -17,7 +17,7 @@ def brain_game(game_name):
         else:
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{right_answer}'.\n"
-                  f"Let\'s try again, {user_name}!")
+                  f"Let's try again, {user_name}!")
             break
     else:
         print(f"Congratulations, {user_name}!")
