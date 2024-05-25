@@ -1,6 +1,8 @@
 import random
 
+
 QUESTION = 'What is the result of the expression?'
+
 
 def generate_question_answer():
     operand1 = random.randint(1, 100)

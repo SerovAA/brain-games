@@ -3,7 +3,6 @@ from brain_games.all_logik_game import brain_game
 from brain_games.games import progression
 
 
-
 def main():
     brain_game(progression)
 

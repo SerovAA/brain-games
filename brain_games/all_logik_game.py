@@ -1,5 +1,6 @@
 import prompt
 
+
 def brain_game(game_name):
     print("Welcome to the Brain Games!")
     user_name = prompt.string('May I have your name? ')
@@ -20,10 +21,3 @@ def brain_game(game_name):
             break
     else:
         print(f"Congratulations, {user_name}!")
-
-
-
-
-
-
-
