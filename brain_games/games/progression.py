@@ -7,7 +7,7 @@ QUESTION = 'What number is missing in the progression?'
 def generate_question_answer():
     progression_len = random.randint(5, 10)
     hidden_element_index = random.randint(0, progression_len - 1)
-    start_number = random_at_100()
+    start_number = random.randint(1, 100)
     step = random.randint(1, 10)
 
     progression = [str(start_number + step * i) for i in range(progression_len)]
