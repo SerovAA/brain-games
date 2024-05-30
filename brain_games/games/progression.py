@@ -9,8 +9,8 @@ def generate_question_answer():
     max_number_random = 100
     progression_len_min = 5
     progression_len_max = 10
-    min_step = 1,
-    max_step = 10,
+    min_step = 1
+    max_step = 10
     progression_len = random.randint(progression_len_min, progression_len_max)
     hidden_element_index = random.randint(0, progression_len - 1)
     start_number = random.randint(min_number_random, max_number_random)
