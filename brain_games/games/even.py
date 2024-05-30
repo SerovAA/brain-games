@@ -7,6 +7,7 @@ QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 def is_even(number):
     return number % 2 == 0
 
+
 def generate_question_answer():
     min_number = 1
     max_number = 100

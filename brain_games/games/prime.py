@@ -12,6 +12,7 @@ def is_prime(number):
             return False
     return True
 
+
 def generate_question_answer():
     min_number = 1
     max_number = 100
