@@ -4,8 +4,13 @@ import random
 QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
+def is_even(number):
+    return number % 2 == 0
+
 def generate_question_answer():
-    number = random.randint(1, 100)
+    min_number = 1
+    max_number = 100
+    number = random.randint(min_number, max_number)
     question = str(number)
-    right_answer = 'yes' if number % 2 == 0 else 'no'
+    right_answer = 'yes' if is_even(number) else 'no'
     return question, right_answer
